@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Project</title>
+
+    <!-- bs css1 js2 -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- fontawesome css1 -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style type="text/css">
+    .map{
+        width: 100%;
+        height: 40vh;
+    }
+</style>
+<body>
+
+	<!--Start Navbar-->
+<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+    <a href="#" class="navbar-brand mx-2"><img src="https://wiki.videolan.org/images/Ubuntulogo.png" width="50px"
+                                               alt="logo"/> <span class="mx-2">Knowledge Sharing Co.,Ltd</span></a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav"><i class="navbar-toggler-icon"></i>
+    </button>
+
+    <div class="navbar-collapse collapse justify-content-between" id="nav">
+        <ul class="navbar-nav px-3">
+            <li class="nav-item"><a href="#home" class="nav-link fw-bold text-light text-uppercase">Home</a></li>
+            <li class="nav-item"><a href="#ebook" class="nav-link fw-bold text-light text-uppercase">Ebook</a></li>
+            <li class="nav-item dropdown"><a href="#software" class="nav-link fw-bold text-light text-uppercase dropdown-toggle"
+                                             data-bs-toggle="dropdown">Software</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#software" class="dropdown-item">Android App</a></li>
+                    <li><a href="#software" class="dropdown-item">IOS App</a></li>
+                    <li><a href="#software" class="dropdown-item">Linux App</a></li>
+                    <li><a href="#software" class="dropdown-item">Window App</a></li>
+                </ul>
+            </li>
+            <li class="nav-item"><a href="#team" class="nav-link fw-bold text-light text-uppercase">About</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link fw-bold text-light text-uppercase">Contact</a></li>
+        </ul>
+
+        <form class="px-3" action="" method="">
+            <div class="input-group">
+                <input type="text" name="search" id="search" class="form-control form-control-sm rounded-0"
+                       placeholder="Search..."/>
+                <span class="input-group-text rounded-0"><i class="fas fa-search"></i></span>
+            </div>
+        </form>
+    </div>
+</nav>
+<!--End Navbar-->
+
+
+<!--Start Banner Section-->
+<section id="home">
+    <div class="container-fluid">
+        <div class="row bg-info justify-content-center align-items-center" style="height:100vh;">
+            <div class="col-md-10 text-center">
+                <h1 class="text-capitalize display-2"><span class="text-light">knowledge sharing</span><span
+                        class="text-primary"> website</span></h1>
+                <h2 class="text-light fw-light fst-italic">Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the
+                    1500s.</h2>
+                <a href="#" class="btn btn-warning btn-lg rounded-0 px-4 m-3" data-bs-toggle="modal" data-bs-target="#loginmodal">Login Here</a>
+                <a href="#" class="btn btn-danger btn-lg rounded-0 px-4 m-3">Register Here</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!--End Banner Section-->
+
+<!--Start Ebook Section-->
+<section id="ebook" class="bg-light p-5">
+    <div class="container-fluid">
+        <!--        start title-->
+        <div class="col-12 text-center">
+            <h1 class="text-warning display-3">Ebook</h1>
+            <p class="text-secondary lead">Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.</p>
+        </div>
+        <!--        end title-->
+
+        <div class="row text-center">
+
+            <div class="col-lg-4 col-sm-10 mx-auto mb-5">
+                <i class="fas fa-desktop fa-6x text-warning mb-3"></i>
+                <h1 class="text-secondary">Technology</h1>
+                <p class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <a href="#" class="btn btn-outline-warning">Learn More</a>
+            </div>
+
+            <div class="col-lg-4 col-sm-10 mx-auto mb-5">
+                <i class="fas fa-edit fa-6x text-warning mb-3"></i>
+                <h1 class="text-secondary">Design</h1>
+                <p class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <a href="#" class="btn btn-outline-warning">Learn More</a>
+            </div>
+
+            <div class="col-lg-4 col-sm-10 mx-auto mb-5">
+                <i class="fas fa-shopping-basket fa-6x text-warning mb-3"></i>
+                <h1 class="text-secondary">Cook</h1>
+                <p class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <a href="#" class="btn btn-outline-warning">Learn More</a>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<!--End Ebook Section-->
+
+
+<!--Start Software Section-->
+<section id="software">
+    <div class="container-fluid">
+        <!--        start title-->
+        <div class="col-12 text-center">
+            <h1 class="text-warning display-3">Software</h1>
+            <p class="text-secondary lead">Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.</p>
+        </div>
+        <!--        end title-->
+
+        <div class="row text-center">
+
+            <div class="col-lg-3 col-md-6">
+                <img src="https://st1.bgr.in/wp-content/uploads/2018/10/android-green-lego-poster-googleblog.jpg"
+                     class="img-thumbnail" alt="android"/>
+                <h3 class="text-warning my-3">Android Application</h3>
+                <p class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <img src="https://mytechmyanmar.com/wp-content/uploads/2020/04/appstore.jpg" class="img-thumbnail"
+                     alt="ios"/>
+                <h3 class="text-warning my-3">IOS Application</h3>
+                <p class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <img src="https://i.ytimg.com/vi/8WbyB_2HthM/maxresdefault.jpg" class="img-thumbnail" alt="android"/>
+                <h3 class="text-warning my-3">Linux Application</h3>
+                <p class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+                <img src="https://i.pcmag.com/imagery/lineups/06xskoAKsVIlA7WdtvUGQmT-1.1577756249.fit_lim.size_1182x667.jpg"
+                     class="img-thumbnail" alt="ios"/>
+                <h3 class="text-warning my-3">Windows Application</h3>
+                <p class="text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!--End Software Section-->
+
+
+<!--Start Team Section-->
+<section id="team" class="bg-secondary  p-4">
+    <div class="container-fluid">
+        <!--        start title-->
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="text-warning display-3">Team</h1>
+            </div>
+        </div>
+        <!--        end title-->
+
+        <div class="row">
+
+            <div class="col-lg-4 col-sm-10 mx-auto mb-4">
+                <div class="card">
+                    <img src="https://careerfoundry.com/en/blog/uploads/Sam-CF.jpg" alt="team"/>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h3 class="text-muted">Mr.Pyae Phyo Paing</h3>
+                        </div>
+                        <div class="card-subtitle">
+                            <p class="lead">Founder And CEO</p>
+                        </div>
+                        <div class="float-end">
+                            <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+                            <a href="#"><i class="fab fa-twitter fa-2x text-info"></i></a>
+                            <a href="#"><i class="fab fa-youtube fa-2x text-danger"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-10 mx-auto mb-4">
+                <div class="card">
+                    <img src="https://www.boemagazine.com/wp-content/uploads/2019/11/blur-businesswoman-caucasian-941555.jpg"
+                         alt="team"/>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h3 class="text-muted">Ms.Khin Myat Noe</h3>
+                        </div>
+                        <div class="card-subtitle">
+                            <p class="lead">Operation Manager</p>
+                        </div>
+                        <div class="float-end">
+                            <a href="#"><i class="fab fa-facebook fa-2x"></i> </a>
+                            <a href="#"><i class="fab fa-twitter fa-2x text-info"></i> </a>
+                            <a href="#"><i class="fab fa-youtube fa-2x text-danger"></i> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-10 mx-auto mb-4">
+                <div class="card">
+                    <img src="https://careerfoundry.com/en/blog/uploads/what-is-the-difference-web-developer-web-designer.jpg"
+                         alt="team"/>
+                    <div class="card-body">
+                        <div class="card-title">
+                            <h3 class="text-muted">Mr.Htet Paing</h3>
+                        </div>
+                        <div class="card-subtitle">
+                            <p class="lead">Project Manager</p>
+                        </div>
+                        <div class="float-end">
+                            <a href="#"><i class="fab fa-facebook fa-2x"></i> </a>
+                            <a href="#"><i class="fab fa-twitter fa-2x text-info"></i> </a>
+                            <a href="#"><i class="fab fa-youtube fa-2x text-danger"></i> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+<!--End Team Section-->
+
+
+<!--Start Public Interest Section-->
+<section id="public" class="p-5">
+    <div class="container-fluid">
+        <!--        start title-->
+        <div class="col-12 text-center">
+            <h1 class="text-warning display-3">Public Interest</h1>
+            <p class="text-secondary lead">Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry.</p>
+        </div>
+        <!--        end title-->
+
+        <div class="row">
+            <div class="col-lg-6 col-sm-10 mx-auto">
+                <h3>Ebook</h3>
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-primary progress-bar-striped" style="width:25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                </div>
+
+                <h3>Android Application</h3>
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-secondary progress-bar-striped" style="width:25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                </div>
+
+                <h3>IOS Application</h3>
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-success progress-bar-striped" style="width:15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100">15%</div>
+                </div>
+
+                <h3>Linux Application</h3>
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-info progress-bar-striped" style="width:5%" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100">5%</div>
+                </div>
+
+                <h3>Windows Application</h3>
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-danger progress-bar-striped" style="width:30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">30%</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!--End Public Interest Section-->
+
+
+<!-- Start Contact Section -->
+<section id="contact" class="bg-light p-3">
+
+    <div class="container-fluid">
+       <!-- Start title -->
+       <div class="col-lg-12 text-center display-3">
+
+          <!-- elfslight.com for viber -->
+            <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+            <div class="elfsight-app-f4f6b0df-bff9-4577-8e23-7f40523dd5b2"></div>
+
+           <h1 class="text-warning">Contact Us</h1>
+           <p class="text-secondary lead">Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.</p>
+       </div>
+       <!-- end title  -->
+
+       <div class="row">
+           <div class="col-lg-6 col-md-8 col-sm-10 mx-auto">
+               <div class="card">
+                   <div class="card-title">
+                       <h5>Office Location</h5>
+                   </div>
+                   <div class="card-body">
+                       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3818.7224942378953!2d96.17385861440061!3d16.840117488408737!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c19334e5c2ce5f%3A0x55bf277e014d74be!2sData%20Land%20Technolgoy%20Co.%2CLtd!5e0!3m2!1sen!2smm!4v1626922610553!5m2!1sen!2smm"  style="border:0;" allowfullscreen="" loading="lazy" class="map"></iframe>
+                   </div>
+                   <div class="card-footer">
+                       <p>Phone : 09989889256</p>
+                       <p>Email : info@knowledgeshare.com</p>
+                       <p>Address : No.50,38x81st,Mandalay</p>
+                   </div>
+               </div>
+           </div>
+
+           <div class="col-lg-6 col-md-8 col-sm-10 mx-auto mt-5">
+               <div class="text-secondary text-center">
+                   <h3>Got Question?</h3>
+                   <p>Stay Connected</p>
+               </div>
+
+               <form action="" method="">
+                   <div class="col-md-12 mb-3">
+                       <label for="name">Name</label>
+                       <input type="text" name="name" id="name" class="form-control form-control-sm rounded-0" placeholder="Enter your name"/>
+                   </div>
+
+                   <div class="col-md-12 mb-3">
+                       <label for="email">Email</label>
+                       <input type="email" name="email" id="email" class="form-control form-control-sm rounded-0" placeholder="Enter your email"/>
+                   </div>
+
+                   <div class="col-md-12 mb-3">
+                       <label for="message">Message</label>
+                       <textarea name="message" id="message" class="form-control" placeholder="Enter Message" rows="3"></textarea>
+                   </div>
+
+                   <div class="d-grid">
+                       <button type="submit" class="btn btn-warning rounded-0">Submit</button>
+                   </div>
+               </form>
+           </div>
+       </div>
+
+    </div>
+    
+</section>
+
+<!-- End Contact Section -->
+
+<!-- Start Footer Section -->
+
+<footer class="bg-secondary py-3">
+
+    <div class="container-fluid">
+        <div class="col-lg-12 text-center">
+            <h3 class="text-light text-uppercase fw-light">Knowledge Sharing Project</h3>
+            <h5 class="text-light fw-light fst-italic">Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.</h5>
+
+            <div class="py-3">
+                <a href="#" target="_blank"><i class="fab fa-facebook fa-2x text-primary mx-3"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-youtube fa-2x text-danger mx-3"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-twitter fa-2x text-info mx-3"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-google-plus fa-2x text-danger mx-3"></i></a>
+            </div>
+
+            <p class="text-light">&#x000A9;Copyright <span id="year"></span> - Made By DLT Co,.Ltd</p>
+        </div>
+    </div>
+    
+</footer>
+
+<!-- End Fotter Section-->
+
+<!-- Start Modal Area -->
+
+<!-- start login modal -->
+
+    <div class="modal" id="loginmodal">
+        <div class="modal-dialog modal-dialog-centered modal-sm modal-fullscreen-md-down">
+           <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title">Login Here</h5>
+                <button class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+
+            <div class="modal-body">
+                <div class="col-12">
+                    <form action="" method="">
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" class="form-control form-control-sm rounded-0" placeholder="Enter your email">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password" class="form-control form-control-sm rounded-0" placeholder="Enter your password">
+                        </div>
+
+                        <div>
+                            <button class="btn btn-secondary rounded-0">Cancel</button>
+                            <button type="submit" class="btn btn-primary rounded-0">Login</button>
+                        </div>
+
+
+                    </form>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <p>Not Registered !,<a href="#">Signup Here</a></p>
+            </div>
+           </div>
+            
+        </div>
+        
+    </div>
+
+<!-- End Modal Area -->
+
+<!-- elfslight.com for viber -->
+<!-- <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-f4f6b0df-bff9-4577-8e23-7f40523dd5b2"></div> -->
+
+
+<!-- bs css1 js2 -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+<!-- jquery js1 -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+    let getyear = document.getElementById('year');
+
+    getyear.textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
